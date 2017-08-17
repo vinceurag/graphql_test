@@ -41,7 +41,9 @@ defmodule Graphqltest.Mixfile do
      {:absinthe, "~> 1.3.0"},
      {:absinthe_plug, "~> 1.1"},
      {:absinthe_ecto, git: "https://github.com/absinthe-graphql/absinthe_ecto.git"},
-     {:faker, "~> 0.7"}]
+     {:faker, "~> 0.7"},
+     {:comeonin, "~> 2.5"},
+     {:guardian, "~> 0.13.0"}]
   end
 
   # Aliases are shortcuts or tasks specific to the current project.

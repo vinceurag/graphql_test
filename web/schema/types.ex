@@ -6,7 +6,7 @@ defmodule Graphqltest.Schema.Types do
     field :id, :id
     field :name, :string
     field :email, :string
-    field :posts, list_of(:post), resolve: assoc(posts)
+    field :posts, list_of(:post), resolve: assoc(:posts)
   end
 
   object :post do
@@ -14,5 +14,9 @@ defmodule Graphqltest.Schema.Types do
     field :title, :string
     field :body, :string
     field :user, :user, resolve: assoc(:user)
+  end
+
+  object :session do
+    field :token, :string
   end
 end
