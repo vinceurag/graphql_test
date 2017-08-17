@@ -1,4 +1,6 @@
-# Graphqltest
+# GraphQL Test
+
+I'm just trying to make a GraphQL API.
 
 To start your Phoenix app:
 
